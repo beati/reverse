@@ -2,6 +2,7 @@ package reverse
 
 import (
 	"crypto/tls"
+	"fmt"
 	"net/http"
 	"net/url"
 	"time"
@@ -56,5 +57,6 @@ func Start(config *Config) error {
 		TLSConfig:    tlsConfig,
 	}
 
+	fmt.Println("Reverse proxy started target: " + config.Target)
 	return server.ListenAndServeTLS("", "")
 }
