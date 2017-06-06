@@ -1,0 +1,8 @@
+Reverse:
+    Addr: :443
+    ContactEmail: foo@bar.com
+    Hosts:
+        - example1.com
+        - example2.com
+    CertificateCacheDir: ~/autocert
+    Target: http://localhost:8080
